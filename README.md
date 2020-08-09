@@ -2,10 +2,11 @@
 
 A new Flutter project.
 
-## Getting Started
+## Description
 
-This project is a starting point for a Flutter application.
+The idea behind the this app is to improve your Flutter development skill
 
+## Flutter's official documnetation
 A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
