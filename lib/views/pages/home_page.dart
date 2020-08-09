@@ -6,7 +6,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Developer Laboratory'),
+        title: Text('Development Laboratory'),
       ),
     );
   }
