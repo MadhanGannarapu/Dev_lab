@@ -15,14 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Development Laboratory',
-    theme: PrimaryDevLabTheme.of(context),
-      // home: HomePage(),
+      theme: PrimaryDevLabTheme.of(context),
       builder: ExtendedNavigator(
         router: Router(),
-        // builder: (context, extendedNav) => Theme(
-        //   data: ThemeData(brightness: Brightness.dark),
-        //   child: extendedNav,
-        // ),
       ),
     );
   }
