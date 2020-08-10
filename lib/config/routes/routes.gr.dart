@@ -12,17 +12,20 @@ import '../../views/pages/home_page.dart';
 import '../../views/pages/initial_page.dart';
 import '../../views/pages/login_page.dart';
 import '../../views/pages/onboarding_page.dart';
+import '../../views/pages/theme_lab_page.dart';
 
 class Routes {
   static const String homePage = '/home-page';
   static const String initialPage = '/';
   static const String loginPage = '/login-page';
   static const String onboardingPage = '/onboarding-page';
+  static const String themeLabPage = '/theme-lab-page';
   static const all = <String>{
     homePage,
     initialPage,
     loginPage,
     onboardingPage,
+    themeLabPage,
   };
 }
 
@@ -34,6 +37,7 @@ class Router extends RouterBase {
     RouteDef(Routes.initialPage, page: InitialPage),
     RouteDef(Routes.loginPage, page: LoginPage),
     RouteDef(Routes.onboardingPage, page: OnboardingPage),
+    RouteDef(Routes.themeLabPage, page: ThemeLabPage),
   ];
   @override
   Map<Type, AutoRouteFactory> get pagesMap => _pagesMap;
@@ -59,6 +63,12 @@ class Router extends RouterBase {
     OnboardingPage: (data) {
       return buildAdaptivePageRoute<dynamic>(
         builder: (context) => OnboardingPage(),
+        settings: data,
+      );
+    },
+    ThemeLabPage: (data) {
+      return buildAdaptivePageRoute<dynamic>(
+        builder: (context) => ThemeLabPage(),
         settings: data,
       );
     },
